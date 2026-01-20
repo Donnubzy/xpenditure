@@ -91,86 +91,88 @@ class CommonDesktopContainers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: w!/10, vertical: 30),
       color: AppColors.primaryWhite,
-      child: Row(
-        children: [
-          isImageLeft ?
-          Expanded(
-              child: Container(
-                height: 530,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage(image),
-                    fit: BoxFit.contain
-                  )
-                ),
-              )
-          ) : Container() ,
-          Column(
-            crossAxisAlignment: isImageLeft
-                ? CrossAxisAlignment.end : CrossAxisAlignment.start,
-            children: [
-              Text(s1.toUpperCase(),
-                style: TextStyle(
-                  color: AppColors.primaryGrey,
-                  fontSize: 16
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Text(s2,
-                textAlign: isImageLeft ? TextAlign.right : TextAlign.left,
-                style: TextStyle(
-                  color: AppColors.primaryBlack,
-                  fontSize: w! / 20,
-                  height: 1.1,
-                  fontWeight: FontWeight.bold
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Text(s3,
-                textAlign: isImageLeft ? TextAlign.right : TextAlign.left,
-                style: TextStyle(
-                    color: AppColors.primaryGrey,
-                    fontSize: 16,
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              TextButton.icon(
-                onPressed: (){},
-                icon: Icon(
-                  Icons.arrow_forward_outlined,
-                  size: 20,
-                  color: AppColors.primaryOrange,
-                ),
-                label: Text(
-                  "Learn more",
+      child: Container(
+        margin: EdgeInsets.only(left: w!/10, right: w!/10, top: 40, bottom: 120),
+        child: Row(
+          children: [
+            isImageLeft ?
+            Expanded(
+                child: Container(
+                  height: 530,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(image),
+                      fit: BoxFit.contain
+                    )
+                  ),
+                )
+            ) : Container() ,
+            Column(
+              crossAxisAlignment: isImageLeft
+                  ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+              children: [
+                Text(s1.toUpperCase(),
                   style: TextStyle(
-                    color: AppColors.primaryOrange,
+                    color: AppColors.primaryGrey,
+                    fontSize: 16
                   ),
                 ),
-              )
-            ],
-          ),
-          !isImageLeft
-              ? Expanded(
-              child: Container(
-                height: 530,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage(image),
-                        fit: BoxFit.contain
-                    )
+                SizedBox(
+                  height: 10,
                 ),
-              )
-          ) : Container() ,
-        ],
+                Text(s2,
+                  textAlign: isImageLeft ? TextAlign.right : TextAlign.left,
+                  style: TextStyle(
+                    color: AppColors.primaryBlack,
+                    fontSize: w! / 20,
+                    height: 1.1,
+                    fontWeight: FontWeight.bold
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(s3,
+                  textAlign: isImageLeft ? TextAlign.right : TextAlign.left,
+                  style: TextStyle(
+                      color: AppColors.primaryGrey,
+                      fontSize: 16,
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                TextButton.icon(
+                  onPressed: (){},
+                  icon: Icon(
+                    Icons.arrow_forward_outlined,
+                    size: 20,
+                    color: AppColors.primaryOrange,
+                  ),
+                  label: Text(
+                    "Learn more",
+                    style: TextStyle(
+                      color: AppColors.primaryOrange,
+                    ),
+                  ),
+                )
+              ],
+            ),
+            !isImageLeft
+                ? Expanded(
+                child: Container(
+                  height: 530,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(image),
+                          fit: BoxFit.contain
+                      )
+                  ),
+                )
+            ) : Container() ,
+          ],
+        ),
       ),
     );
   }
