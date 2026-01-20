@@ -137,7 +137,6 @@ class CommonDesktopContainers extends StatelessWidget {
                 style: TextStyle(
                     color: AppColors.primaryGrey,
                     fontSize: 16,
-
                 ),
               ),
               SizedBox(
