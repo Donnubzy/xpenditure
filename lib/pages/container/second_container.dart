@@ -11,7 +11,7 @@ class SecondContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: secondContainerMobileView(context),
-      desktop: secondContainerDesktopView(),
+      desktop: secondContainerDesktopView(context),
     );
   }
 
@@ -61,7 +61,7 @@ class SecondContainer extends StatelessWidget {
 
   // ============== DESKTOP LAYOUT =====================
 
-  Widget secondContainerDesktopView() {
+  Widget secondContainerDesktopView(BuildContext context) {
     return Container(
       height: 900,
       width: double.infinity,
@@ -118,7 +118,7 @@ class SecondContainer extends StatelessWidget {
             ),
           ),
           Container(
-            color: AppColors.primaryWhite,
+            color: Theme.of(context).scaffoldBackgroundColor,
             padding: EdgeInsets.symmetric(vertical: 60 , horizontal: w!/10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
