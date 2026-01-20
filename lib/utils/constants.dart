@@ -1,4 +1,7 @@
 
+import 'package:flutter/material.dart';
+import 'package:xpenditure/utils/colors.dart';
+
 double? h;
 double? w;
 
@@ -16,3 +19,11 @@ const String vectorOne = "assets/images/vector.png";
 const String vectorTwo = "assets/images/vector1.png";
 const String linkedIn = "assets/images/linkedin.png";
 const String illustrator = "assets/images/Illustrator.png";
+const String containerImage = "assets/images/container_image.jpeg";
+
+
+// List of Container colors
+const List<Color> containerColors = [
+  AppColors.primaryOrange, Colors.yellow, Colors.indigo, Colors.lightBlueAccent,
+  Colors.brown
+];
