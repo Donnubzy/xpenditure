@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:xpenditure/utils/colors.dart';
-import 'package:xpenditure/utils/constants.dart';
 import 'package:xpenditure/utils/styles.dart';
+import 'package:xpenditure/widgets/footer_widgets.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
@@ -30,7 +30,7 @@ class _NavBarState extends State<NavBar> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Icon(Icons.menu),
-          navLogo()
+          companyLogo()
         ],
       ),
     );
@@ -44,7 +44,7 @@ class _NavBarState extends State<NavBar> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          navLogo(),
+          companyLogo(),
           Row(
             children: [
               navButton("Features"),
@@ -81,15 +81,6 @@ class _NavBarState extends State<NavBar> {
             fontSize: 18
           ),
           )
-      ),
-    );
-  }
-
-  Widget navLogo(){
-    return Container(
-      width: 110,
-      decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage(logo))
       ),
     );
   }
