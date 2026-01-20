@@ -34,8 +34,8 @@ class ThirdContainer extends StatelessWidget {
     return CommonDesktopContainers(
         s1: "ALWAYS ONLINE",
         s2: "Real-time \nsupport \nwith cloud",
-        s3: "Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim "
-            "accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper"
+        s3: "Tellus lacus morbi sagittis lacus in. Amet nisl at \nmauris enim "
+            "accumsan nisi, tincidunt vel. Enim \nipsum, amet quis ullamcorper"
             " eget ut.",
         image: illustrationOne,
         isImageLeft: false
