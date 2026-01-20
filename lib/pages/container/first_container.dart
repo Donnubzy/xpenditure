@@ -96,9 +96,7 @@ class FirstContainer extends StatelessWidget {
 
   Widget firstContainerDesktopView(){
     return Container(
-      margin: EdgeInsets.only(
-        left: w!/10, right: w!/10, top: 20, bottom: 160
-      ),
+      margin: EdgeInsets.only(left: w!/10, right: w!/10, top: 20, bottom: 160),
       child: Row(
         children: [
           Expanded(child: desktopViewContainerTexts()),
