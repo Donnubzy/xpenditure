@@ -10,14 +10,14 @@ class SecondContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: secondContainerMobileView(),
+      mobile: secondContainerMobileView(context),
       desktop: secondContainerDesktopView(),
     );
   }
 
   // ============== MOBILE LAYOUT =====================
 
-  Widget secondContainerMobileView(){
+  Widget secondContainerMobileView(BuildContext context){
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
@@ -38,15 +38,18 @@ class SecondContainer extends StatelessWidget {
           ),
           Container(
             width: double.infinity,
-            color: AppColors.primaryWhite,
+            color: Theme.of(context).scaffoldBackgroundColor,
             padding: EdgeInsets.symmetric(vertical: 40),
             child: Column(
-
               children: [
                 companyLogo(fb),
+                SizedBox(height: 10,),
                 companyLogo(google),
+                SizedBox(height: 10,),
                 companyLogo(cocaCola),
+                SizedBox(height: 10,),
                 companyLogo(linkedIn),
+                SizedBox(height: 10,),
                 companyLogo(samsung),
               ],
             ),
