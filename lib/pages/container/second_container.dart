@@ -116,7 +116,7 @@ class SecondContainer extends StatelessWidget {
           ),
           Container(
             color: AppColors.primaryWhite,
-            padding: EdgeInsets.symmetric(vertical: 80),
+            padding: EdgeInsets.symmetric(vertical: 60 , horizontal: w!/10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
