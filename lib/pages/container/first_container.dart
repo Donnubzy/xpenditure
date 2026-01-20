@@ -21,7 +21,6 @@ class FirstContainer extends StatelessWidget {
     return Column(
       children: [
         mobileViewIllustrationImage(),
-        //SizedBox(height: 5),
         mobileViewContainerTexts(),
       ],
     );
@@ -87,7 +86,7 @@ class FirstContainer extends StatelessWidget {
               fontSize: 15
           ),
         ),
-        SizedBox(height: 10),
+        SizedBox(height: 40),
       ],
     );
   }
