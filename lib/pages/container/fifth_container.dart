@@ -34,8 +34,8 @@ class FifthContainer extends StatelessWidget {
     return CommonDesktopContainers(
         s1: "USE ANYTIME",
         s2: "Use anytime \nwhen you \nneed",
-        s3: "Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim "
-            "accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper "
+        s3: "Tellus lacus morbi sagittis lacus in. Amet nisl at \nmauris enim "
+            "accumsan nisi, tincidunt vel. Enim \nipsum, amet quis ullamcorper "
             "eget ut.",
         image: illustrationThree,
         isImageLeft: false
