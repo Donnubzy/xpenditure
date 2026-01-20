@@ -34,8 +34,8 @@ class FourthContainer extends StatelessWidget {
     return CommonDesktopContainers(
         s1: "FREE SOME COST",
         s2: "Save cost \nfor you \nand family",
-        s3: "Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim "
-            "accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper "
+        s3: "Tellus lacus morbi sagittis lacus in. Amet nisl at \nmauris enim "
+            "accumsan nisi, tincidunt vel. Enim \nipsum, at quis ullamcorper "
             "eget ut.",
         image: illustrationTwo,
         isImageLeft: true
