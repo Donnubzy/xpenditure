@@ -1,12 +1,16 @@
 
 import 'package:flutter/material.dart';
-import 'package:xpenditure/pages/container/fifth_container.dart';
-import 'package:xpenditure/pages/container/first_container.dart';
-import 'package:xpenditure/pages/container/fourth_container.dart';
-import 'package:xpenditure/pages/container/second_container.dart';
-import 'package:xpenditure/pages/container/third_container.dart';
 import 'package:xpenditure/utils/constants.dart';
 import 'package:xpenditure/widgets/nav_bar.dart';
+import 'package:xpenditure/pages/container/first_container.dart';
+import 'package:xpenditure/pages/container/second_container.dart';
+import 'package:xpenditure/pages/container/third_container.dart';
+import 'package:xpenditure/pages/container/fourth_container.dart';
+import 'package:xpenditure/pages/container/fifth_container.dart';
+import 'package:xpenditure/pages/container/sixth_container.dart';
+import 'package:xpenditure/pages/container/seventh_container.dart';
+import 'package:xpenditure/pages/container/eight_container.dart';
+import 'package:xpenditure/pages/container/ninth-container.dart';
 
 
 class Home extends StatefulWidget {
@@ -31,7 +35,11 @@ class _HomeState extends State<Home> {
             SecondContainer(),
             ThirdContainer(),
             FourthContainer(),
-            FifthContainer()
+            FifthContainer(),
+            SixthContainer(),
+            SeventhContainer(),
+            EightContainer(),
+            NinthContainer()
           ],
         ),
       ),
