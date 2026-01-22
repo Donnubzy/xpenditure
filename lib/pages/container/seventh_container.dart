@@ -29,12 +29,12 @@ Widget seventhContainerMobileView(){
           textAlign: TextAlign.center,
           style: TextStyle(
               color: AppColors.primaryBlack,
-              fontSize: w! / 20,
+              fontSize: w! / 13,
               height: 1.1,
               fontWeight: FontWeight.bold
           ),
         ),
-        SizedBox(height: 10),
+        SizedBox(height: 50),
         SeventhContainerCommonWidgets(
             boldText: "Starter Plan",
             icon: Icons.work_outline,
