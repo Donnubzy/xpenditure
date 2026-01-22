@@ -116,7 +116,7 @@ class SeventhContainerCommonWidgets extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Container(
+            SizedBox(
               width: 120,
               child: ElevatedButton.icon(
                 onPressed: (){},
