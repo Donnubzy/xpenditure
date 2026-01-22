@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:xpenditure/pages/container/footer.dart';
 import 'package:xpenditure/utils/constants.dart';
 import 'package:xpenditure/widgets/nav_bar.dart';
 import 'package:xpenditure/pages/container/first_container.dart';
@@ -39,7 +40,8 @@ class _HomeState extends State<Home> {
             SixthContainer(),
             SeventhContainer(),
             EightContainer(),
-            NinthContainer()
+            NinthContainer(),
+            Footer()
           ],
         ),
       ),
