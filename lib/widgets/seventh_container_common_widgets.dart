@@ -167,11 +167,11 @@ class SeventhContainerCommonRowDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300,
-      width: w! / 5,
+      height: 350,
+      width: w! / 4,
       color: AppColors.primaryWhite,
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -266,8 +266,8 @@ class SeventhContainerCommonRowDesktop extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: w!/35),
+            SizedBox(
+              width: 120,
               child: ElevatedButton.icon(
                 onPressed: (){},
                 style: ButtonStyle(
