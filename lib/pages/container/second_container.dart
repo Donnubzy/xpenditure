@@ -63,7 +63,7 @@ class SecondContainer extends StatelessWidget {
 
   Widget secondContainerDesktopView(BuildContext context) {
     return Container(
-      height: 900,
+      height: h!,
       width: double.infinity,
       decoration: BoxDecoration(
         color: AppColors.primaryOrange
