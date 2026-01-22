@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:xpenditure/pages/container/footer.dart';
 import 'package:xpenditure/utils/constants.dart';
 import 'package:xpenditure/widgets/nav_bar.dart';
 import 'package:xpenditure/pages/container/first_container.dart';
@@ -12,7 +11,7 @@ import 'package:xpenditure/pages/container/sixth_container.dart';
 import 'package:xpenditure/pages/container/seventh_container.dart';
 import 'package:xpenditure/pages/container/eight_container.dart';
 import 'package:xpenditure/pages/container/ninth-container.dart';
-
+import 'package:xpenditure/pages/container/footer.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
