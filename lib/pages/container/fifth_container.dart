@@ -9,9 +9,9 @@ class FifthContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: fifthContainerMobileView(),
-      desktop: fifthContainerDesktopView(),
+    return ScreenTypeLayout.builder(
+      mobile: (context) => fifthContainerMobileView(),
+      desktop: (context) => fifthContainerDesktopView(),
     );
   }
 

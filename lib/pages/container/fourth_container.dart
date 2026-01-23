@@ -9,9 +9,9 @@ class FourthContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: fourthContainerMobileView(),
-      desktop: fourthContainerDesktopView(),
+    return ScreenTypeLayout.builder(
+      mobile: (context) => fourthContainerMobileView(),
+      desktop: (context) => fourthContainerDesktopView(),
     );
   }
 

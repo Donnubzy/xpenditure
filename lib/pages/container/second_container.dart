@@ -9,9 +9,9 @@ class SecondContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: secondContainerMobileView(context),
-      desktop: secondContainerDesktopView(context),
+    return ScreenTypeLayout.builder(
+      mobile: (context) => secondContainerMobileView(context),
+      desktop: (context) => secondContainerDesktopView(context),
     );
   }
 
