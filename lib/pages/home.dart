@@ -10,7 +10,7 @@ import 'package:xpenditure/pages/container/fifth_container.dart';
 import 'package:xpenditure/pages/container/sixth_container.dart';
 import 'package:xpenditure/pages/container/seventh_container.dart';
 import 'package:xpenditure/pages/container/eight_container.dart';
-import 'package:xpenditure/pages/container/ninth-container.dart';
+import 'package:xpenditure/pages/container/ninth_container.dart';
 import 'package:xpenditure/pages/container/footer.dart';
 
 class Home extends StatefulWidget {
